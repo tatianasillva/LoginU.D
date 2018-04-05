@@ -17,9 +17,9 @@ if (mysqli_num_rows($resultado)>0){
     $registro = mysqli_fetch_assoc($resultado);
         
         if ($_REQUEST["usuario"]== $registro["nombre"] && $_REQUEST["pass"] == $registro["clave"] ){
-        echo "usted ha ingresado a la tierra ";
+        echo "usted ha ingresado en este momento ";
         }else{
-        echo "se fue por un agujero negro ";
+        echo "usted salio ya  ";
      
     }
 }
